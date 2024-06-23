@@ -1,0 +1,33 @@
+type = "ingredient"			# Type must be one of ingredient, recipe, person, group
+name = "soy sauce"			# Name is for human readability, can be any UTF-8 string
+author = "sudo-nano"		# Author field is for human readability and eventually sorting by author
+lastUpdated = "2024-05-16"	# Date of last update in YYYY-MM-DD format 
+
+# Unit type to use for this ingredient
+# Valid types are volumetric, mass, discrete
+unitType = "volumetric"
+
+[incompatibilities.dietary]
+hasAnimalProduct = true
+hasMeat = true
+hasEgg = false
+hasDairy = false
+hasGluten = false
+hasTreeNuts = false
+hasSesame = false
+hasShellfish = false
+
+[incompatibilities.religious]
+isHalal = false
+isKosher = false
+isLeavened = false
+
+# Table names must be snake case 
+[purchase_increments]
+# Purchase increments is a list of lists. Each sub-list should contain exactly 3 items.
+# The first item is the amount, the second item is the unit for that amount, and the 
+# last item is the cost for that increment. 
+increments = [ 
+	[10.0, "mL", 1.00],	# This specifies that you can purchase 10.0 mL for $1.00. 
+	[1.0, "L", 5.00]	# This specifies that you can purchase 1.0 L for $5.00. 
+]

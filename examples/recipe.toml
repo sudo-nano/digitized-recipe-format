@@ -1,0 +1,7 @@
+type = "recipe"
+name = "simple breakfast"
+author = "sudo-nano"
+lastUpdated = "2024-05-20"
+
+[ingredients]
+list = 
