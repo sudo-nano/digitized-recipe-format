@@ -1,7 +1,18 @@
-type = "recipe"
-name = "simple breakfast"
-author = "sudo-nano"
-lastUpdated = "2024-05-20"
+type = "recipe"             # Type must be one of ingredient, recipe, person, group.
+name = "simple breakfast"   # Name can be any UTF-8 string
+author = "sudo-nano"        # Author field is for human readability and eventually sorting by author.
+lastUpdated = "2024-05-20"  # Date of last update in YYYY-MM-DD format
 
+# Ingredient files are not complicated.
+# They contain a single "ingredients" table that contains only "list",
+# a list containing the ingredients.
+# Each item in the list is a 3-length list. In order, the fields are name, amount, unit.
 [ingredients]
-list = 
+list = [
+    ["soy sauce", "10.0", "mL"],    # 10 mL of soy sauce
+    ["rice", "100.0", "g"],         # 100 g of rice
+    ["egg", "1", ""]                # 1 egg
+]
+
+# TODO: Decide whether discrete ingredients should have an empty unit field or
+# omit the field entirely.

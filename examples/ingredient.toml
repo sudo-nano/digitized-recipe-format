@@ -1,6 +1,6 @@
-type = "ingredient"			# Type must be one of ingredient, recipe, person, group
-name = "soy sauce"			# Name is for human readability, can be any UTF-8 string
-author = "sudo-nano"		# Author field is for human readability and eventually sorting by author
+type = "ingredient"			# Type must be one of ingredient, recipe, person, group.
+name = "soy sauce"			# Name can be any UTF-8 string
+author = "sudo-nano"		# Author field is for human readability and eventually sorting by author.
 lastUpdated = "2024-05-16"	# Date of last update in YYYY-MM-DD format 
 
 # Unit type to use for this ingredient
@@ -22,7 +22,7 @@ isHalal = false
 isKosher = false
 isLeavened = false
 
-# Table names must be snake case 
+# Table names must be snake case. Spaces are not supported in TOML table names.
 [purchase_increments]
 # Purchase increments is a list of lists. Each sub-list should contain exactly 3 items.
 # The first item is the amount, the second item is the unit for that amount, and the 
