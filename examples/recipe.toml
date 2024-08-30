@@ -16,3 +16,12 @@ list = [
 
 # TODO: Decide whether discrete ingredients should have an empty unit field or
 # omit the field entirely.
+
+# Instructions specifies the name of a related markdown file containing human-readable 
+# preparation instructions for the recipe. These instructions need not be machine
+# readable. They exist primarily to allow a digitized recipe format database to be the 
+# primary source of truth for both machines and people. 
+instructions = "recipe.md"
+
+# If there are no attached instructions, leave it as an empty string. 
+# instructions = ""
