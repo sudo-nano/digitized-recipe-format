@@ -18,7 +18,7 @@ hasSesame = false
 hasShellfish = false
 
 [incompatibilities.religious]
-isHalal = false
+isHalal = true
 isKosher = false
 isLeavened = false
 
