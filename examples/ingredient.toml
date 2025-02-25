@@ -19,7 +19,9 @@ hasShellfish = false
 
 [incompatibilities.religious]
 isHalal = true
-isKosher = false
+# Soy sauce is kosher, but doesn't meet the stricter definition of kosher kept
+# by more orthodox jews during Passover. We don't have a field for this stricter kosher.
+isKosher = true
 isLeavened = false
 
 # Table names must be snake case. Spaces are not supported in TOML table names.
