@@ -20,7 +20,8 @@ hasShellfish = false
 [incompatibilities.religious]
 isHalal = true
 # Soy sauce is kosher, but doesn't meet the stricter definition of kosher kept
-# by more orthodox jews during Passover. We don't have a field for this stricter kosher.
+# by more orthodox jews during Passover. The minimum specification does not require
+# an additional field for this, but users are free to add one.
 isKosher = true
 isLeavened = false
 
