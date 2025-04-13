@@ -1,3 +1,4 @@
+# Only one ingredient can be defined per file.
 type = "ingredient"			# Type must be one of ingredient, recipe, person, group.
 name = "soy sauce"			# Name can be any UTF-8 string
 author = "sudo-nano"		# Author field is for human readability and eventually sorting by author.
@@ -6,6 +7,12 @@ lastUpdated = "2024-05-16"	# Date of last update in YYYY-MM-DD format
 # Unit type to use for this ingredient
 # Valid types are volumetric, mass, discrete
 unitType = "volumetric"
+
+# Density of this ingredient
+# Density is not required, but you won't be able to convert between mass and volume
+# unless it has a density value.
+density.amount = 1.1	# Placeholder value: 1.1 g/mL
+density.unit = "g/mL"	# TODO: measure actual density of soy sauce
 
 [incompatibilities.dietary]
 hasAnimalProduct = true
