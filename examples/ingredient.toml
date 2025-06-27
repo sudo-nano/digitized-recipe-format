@@ -15,22 +15,22 @@ density.amount = 1.1	# Placeholder value: 1.1 g/mL
 density.unit = "g/mL"	# TODO: measure actual density of soy sauce
 
 [incompatibilities.dietary]
-hasAnimalProduct = true
-hasMeat = true
-hasEgg = false
-hasDairy = false
-hasGluten = false
-hasTreeNuts = false
-hasSesame = false
-hasShellfish = false
+animalProduct = true
+meat = true
+egg = false
+dairy = false
+gluten = false
+treeNuts = false
+sesame = false
+shellfish = false
 
 [incompatibilities.religious]
-isHalal = true
+halal = true
 # Soy sauce is kosher, but doesn't meet the stricter definition of kosher kept
 # by more orthodox jews during Passover. The minimum specification does not require
 # an additional field for this, but users are free to add one.
-isKosher = true
-isLeavened = false
+kosher = true
+leavened = false
 
 # Table names must be snake case. Spaces are not supported in TOML table names.
 [purchase_increments]
