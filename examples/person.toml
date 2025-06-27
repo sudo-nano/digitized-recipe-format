@@ -1,0 +1,24 @@
+# Only one person can be defined per file 
+type = "person"
+name = "Squilliam Fancyson"
+author = "sudo-nano"
+lastUpdated = "2025-06-26"
+
+# Set values to true if the person is *unable* to eat this category
+# i.e. true == yes, it's restricted
+[restrictions.dietary]
+animalProduct = false
+meat = false
+egg = false
+dairy = false 
+gluten = true
+treeNuts = false
+sesame = false
+shellfish = true
+
+# Default religious restrictions
+# Set to true if a person adheres to them
+[restrictions.religious]
+halal = false
+kosher = true
+leavened = false
