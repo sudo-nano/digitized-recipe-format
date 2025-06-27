@@ -1,4 +1,4 @@
-# Only one person can be defined per file 
+# Only one person can be defined per file
 type = "person"
 name = "Squilliam Fancyson"
 author = "sudo-nano"
@@ -10,11 +10,14 @@ lastUpdated = "2025-06-26"
 animalProduct = false
 meat = false
 egg = false
-dairy = false 
-gluten = true
+dairy = false
+gluten = true       # No gluten
 treeNuts = false
 sesame = false
-shellfish = true
+shellfish = true    # No shellfish
+
+# List of disallowed specific ingredients. Should be a list of strings.
+ingredients = ["soy sauce"]
 
 # Default religious restrictions
 # Set to true if a person adheres to them
