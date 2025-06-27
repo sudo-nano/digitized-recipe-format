@@ -14,17 +14,17 @@ unitType = "volumetric"
 density.amount = 1.1	# Placeholder value: 1.1 g/mL
 density.unit = "g/mL"	# TODO: measure actual density of soy sauce
 
-[incompatibilities.dietary]
-animalProduct = true
-meat = true
+[restrictions]
+animalProduct = false
+meat = false
 egg = false
 dairy = false
-gluten = false
+gluten = true
 treeNuts = false
 sesame = false
 shellfish = false
 
-[incompatibilities.religious]
+# Default religious restrictions
 halal = true
 # Soy sauce is kosher, but doesn't meet the stricter definition of kosher kept
 # by more orthodox jews during Passover. The minimum specification does not require
