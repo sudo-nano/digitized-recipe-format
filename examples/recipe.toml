@@ -3,7 +3,7 @@ name = "simple breakfast"   # Name can be any UTF-8 string
 author = "sudo-nano"        # Author field is for human readability and eventually sorting by author.
 lastUpdated = "2024-05-20"  # Date of last update in YYYY-MM-DD format
 
-# Ingredient files are not complicated.
+# Recipe files are not complicated.
 # They contain a single "ingredients" table that contains only "list",
 # a list containing the ingredients.
 # Each item in the list is a 3-length list. In order, the fields are name, amount, unit.
