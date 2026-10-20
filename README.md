@@ -1,15 +1,28 @@
 # digitized-recipe-format
-An open standard for digitizing recipes and their ingredients, based on TOML. Designed to be readable for humans *and* machines.
 
-Being developed alongside [Quartermaster](https://github.com/sudo-nano/quartermaster).
+An open standard for digitizing recipes and their ingredients, based on TOML. 
+Meant to be human *and* machine readable. The Digitized Recipe Format is being designed
+in parallel with [Quartermaster](https://github.com/sudo-nano/quartermaster), a tool
+for quickly and easily determining what recipes work for your friends' dietary 
+restrictions.
 
-## Ingredient Features
-Ingredients are marked with their diet incompatibilities (such as whether they're animal products, contain nuts, are kosher, or are halal) to easily check
-whether you and your guests are able to eat it.
-They also have purchase increments, a way to track how much it costs to purchase a given amount of an ingredient.
-This makes it easy to calculate the optimal amount to purchase for your recipe.
+## Design Goals
+- Be human and machine readable 
+- Be as unambiguous as possible. At minimum, never be ambiguous in a direction that could be dangerous or lead someone to eat something they don't intend to.
+- Serve real people's needs (not developers' egos)
 
-## Recipe Features
-Recipe files are uncomplicated, and pretty much only consist of a list of ingredients and their quantities.
-While the format is primarily meant to be written by humans and read by machines, there's an optional
-field for the name of an attached markdown file containing prep instructions.
+## Ingredient Format
+Ingredient files begin with `type = "ingredient"`, and has a number of fields describing
+the ingredient. There are a number of mandatory fields for common dietary restrictions
+and religious dietary restrictions. Software complying with the format must support these,
+and must reject files where these fields are not populated. Users can add arbitrary 
+optional fields that programs can choose to parse or ignore.
+
+Ingredients may also list purchase increments, the quantities in which ingredients can
+be purchased and the accompanying price. These allow programs to estimate the cost of
+recipes.
+
+## Recipe format 
+Recipes are only a list of ingredients and the quantities of each. Their properties
+are programmatically derived from their ingredients. There's an optional field for the
+name of an attached markdown file containing prep instructions.
