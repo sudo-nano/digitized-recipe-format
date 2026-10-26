@@ -1,7 +1,8 @@
 type = "recipe"             # Type must be one of ingredient, recipe, person, group.
 name = "simple breakfast"   # Name can be any UTF-8 string
 author = "sudo-nano"        # Author field is for human readability and eventually sorting by author.
-lastUpdated = "2024-05-20"  # Date of last update in YYYY-MM-DD format
+lastUpdated = "2026-10-26"  # Date of last update in YYYY-MM-DD format
+categories = ["example"]    # List of category strings for use in filtering
 
 # Recipe files are not complicated.
 # They contain a single "ingredients" table that contains only "list",
